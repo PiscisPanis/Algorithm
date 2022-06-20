@@ -7,19 +7,22 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BJ_1001_AB {
+public class BJ_10869_사칙연산 {
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		
+		int A = Integer.parseInt(st.nextToken());
+		int B = Integer.parseInt(st.nextToken());
 
-		double A = Integer.parseInt(st.nextToken());
-		double B = Integer.parseInt(st.nextToken());
-
-		bw.write(A - B + "\n");
-
+		bw.write((A + B) + "\n" + (A - B) + "\n" + (A * B) + "\n" 
+		+ (A / B) + "\n"+ (A % B) + "\n");
+		
 		bw.flush();
 		bw.close();
 	}
+
 }

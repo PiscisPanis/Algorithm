@@ -33,6 +33,9 @@ hs_err_pid*
 # project
 .project
 
+# metadata
+.metadata/
+
 
 # Python ===================
 
@@ -171,3 +174,4 @@ dmypy.json
 
 # venv
 .venv/
+/.metadata/
